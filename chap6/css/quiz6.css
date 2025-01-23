@@ -3,13 +3,13 @@ body {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  height: 92vh; 
+  height: 100vh; 
   background-color: #000 !important;
 }
 
 .Section {
   width: 1280px; 
-  height: 720px; 
+  height: 795px; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
@@ -24,7 +24,7 @@ body {
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  position: relative; 
+  position: absolute; 
 }
 
 /*버튼 선택 처리*/
@@ -159,15 +159,14 @@ body {
 
 /* 버튼의 부모 요소 스타일 */
 .next {
-  position: relative; /* 부모 요소를 기준으로 버튼 배치 */
-  width: 100%; /* 필요에 따라 조정 */
+  position: absolute;
+  bottom: 128px;
+  right: 61px;
+  width: auto;
+  z-index: 1;
 }
 
-/* 버튼 스타일 */
 .next button {
-  position: absolute;
-  bottom: -270px;
-  right:67px;
   padding: 5px 10px;
   font-size: 14px;
   background-color: #ff6600;
@@ -177,13 +176,11 @@ body {
   cursor: pointer;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
-  z-index: 1;
 }
 
 .next button:hover {
   background-color: #ff4500;
 }
-
 
 ._6-2.section.quiz2 {
   width: 1280px;
