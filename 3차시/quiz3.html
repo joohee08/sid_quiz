@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz_3</title>
+    <link rel="stylesheet" href="css/quiz3.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="js/quiz_m.js"></script>
+
+    <!-- Input박스 -->
+	<script>
+		function validateInput(input) {
+			// 입력값이 1글자를 초과하면 첫 번째 글자만 유지
+			if (input.value.length > 1) {
+				input.value = input.value.charAt(0);
+			}
+	
+			// 숫자나 특정 문자만 허용 , 주석 해제
+			// input.value = input.value.replace(/[^가-힣a-zA-Z0-9]/g, ""); // 예: 한글, 영문, 숫자만 허용
+		}
+	</script>
+</head>
+
+<body>
+    <div class="Section quiz1" style="display:block;">
+        <div id="Con3">
+            <img src="img/Quiz3-1.png" alt="Background">
+            <div class="Select_con">
+                <div class="Select1">
+                    <div class="Line_1">
+                        <!-- 구역 -->
+                        <div class="Ex01 ChkBtn">
+                            <img src="img/Ex01.png" alt="선택1">
+                        </div>
+                        <div class="Ex02 ChkBtn">
+                            <img src="img/Ex02.png" alt="선택2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Select2">
+                    <div class="Line_2">
+                        <!-- 구역 -->
+                        <div class="Ex03 ChkBtn">
+                            <img src="img/Ex03.png" alt="선택3">
+                        </div>
+                        <div class="Ex04 ChkBtn">
+                            <img src="img/Ex04.png" alt="선택4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 캐릭터 이미지 -->
+            <div class="Character1">
+                <div class="qman"></div>
+                <div class="oman"></div>
+                <div class="xman"></div>
+            </div>
+
+            <div class="next">
+                <button id="nextQuizButton">다음 문제</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Section quiz2" style="display:none;">
+        <div id="Con3">
+            <img src="img/Quiz3-2.png" alt="Background">
+            <div class="Input_con2">
+                <!-- 1문단 -->
+                <div class="Sentence_1">
+                    <div class="Input_box" style="position:absolute">
+                        <input type="text" class="Ex01-2 inputRect" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex02-2 inputRect" style="left: 41px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex03-2 inputRect" style="left: 82px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex04-2 inputRect" style="left: 123px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex05-2 inputRect" style="left: 165px;" maxlength="1" oninput="validateInput(this)">
+                    </div>
+
+                    <div class="Input_box2" style="position:absolute">
+                        <input type="text" class="Ex06-2 inputRect" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex07-2 inputRect" style="left: 41px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex08-2 inputRect" style="left: 82px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex09-2 inputRect" style="left: 123px;" maxlength="1" oninput="validateInput(this)">
+                    </div>
+                </div>
+                <!-- 2문단 -->
+                <div class="Sentence_2">
+                    <div class="Input_box3" style="position:absolute">
+                        <input type="text" class="Ex10-2 inputRect" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex11-2 inputRect" style="left: 41px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex12-2 inputRect" style="left: 82px;" maxlength="1" oninput="validateInput(this)">
+                    </div>
+                </div>
+                <!-- 3문단 -->
+                <div class="Sentence_3">
+                    <div class="Input_box4" style="position:absolute">
+                        <input type="text" class="Ex13-2 inputRect" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex14-2 inputRect" style="left: 42px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex15-2 inputRect" style="left: 83px;" maxlength="1" oninput="validateInput(this)">
+                        <input type="text" class="Ex16-2 inputRect" style="left: 124px;" maxlength="1" oninput="validateInput(this)">
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <input type="image" src="img/ok-btn.png" alt="정답확인 버튼" width="225" height="70">
+                </div>
+            </div>
+             <!-- 캐릭터 이미지 -->
+             <div class="Character1">
+                <div class="qman"></div>
+                <div class="oman"></div>
+                <div class="xman"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

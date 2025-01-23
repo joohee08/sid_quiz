@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <style>
+         .quiz-container {
+            display: none;
+        }
+
+        .quiz-container.active {
+            display: block;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+        .Chapter {
+            position: fixed; 
+            bottom: 57px; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1243px; 
+            height: 80px; 
+            background-color: hwb(240 15% 6% / 0.336);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .prevchap, .nextchap {
+            position: absolute;
+            cursor: pointer;
+            width: 60px;
+            height: auto;
+        }
+
+        .prevchap {
+            left: 524px;
+            width: 60px;
+        }
+
+        .nextchap {
+        left: 676px;
+        width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--iframe -->
+    <iframe id="quiz-frame" src="./1차시/quiz1.html"></iframe>
+
+    <!-- 화살표 버튼 -->
+    <div class="Chapter">
+        <img src="./images/prevchap.png" alt="이전" onclick="goToPrevPage()" class="prevchap">
+        <img src="./images/nextchap.png" alt="다음" onclick="goToNextPage()" class="nextchap">
+    </div>
+
+     <!-- 스크립트 -->
+    <script>
+
+         // 현재 퀴즈 화면의 인덱스를 관리
+         const quizPages = [
+            './1차시/quiz1.html',
+            './2차시/quiz2.html',
+            './3차시/quiz3.html',
+            './4차시/quiz4.html',
+            './5차시/quiz5.html',
+            './6차시/quiz6.html'
+        ];
+        let currentPageIndex = 0;
+
+        // 다음 페이지로 이동
+        function goToNextPage() {
+            currentPageIndex = (currentPageIndex + 1) % quizPages.length; // 순환 구조
+            document.getElementById('quiz-frame').src = quizPages[currentPageIndex];
+        }
+
+        // 이전 페이지로 이동
+        function goToPrevPage() {
+            currentPageIndex =
+                (currentPageIndex - 1 + quizPages.length) % quizPages.length; // 순환 구조
+            document.getElementById('quiz-frame').src = quizPages[currentPageIndex];
+        }
+    </script>
+</body>
+</html>

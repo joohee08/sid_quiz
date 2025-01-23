@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh; /* 화면 전체 높이 */
+    background-color: #000000;
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+
+.Section {
+    width: 1280px; /* 콘텐츠 너비 */
+    height: 720px; /* 콘텐츠 높이 */
+    position: relative;
+    background-color: transparent; /* 배경색 투명 */
+    display: flex; /* 내부 요소 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
+}
+
+.Section {
+    position: absolute;
+}
+
+#Con2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 캐릭터 */
+.Character1 {
+    height: 203px;
+    width: 180px;
+    position: absolute;
+    bottom: 0px;
+    left: 42px;
+}
+.Character1 > div {
+    position: absolute; /* 부모(Character1)를 기준으로 위치 지정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 부모 크기만큼 가득 차게 설정 */
+    height: 100%; /* 부모 크기만큼 가득 차게 설정 */
+   
+}
+
+.qman {
+    display: block;
+    background-image: url(../img/qman.png);
+    animation: qman 1.4s 0.3s infinite steps(20) forwards;
+}
+
+.oman {
+    display: none ; 
+    background-image: url(../img/oman.png);
+    animation: oman 0.9s 0.3s 5 steps(30) forwards;
+}
+
+.xman {
+    display: none ; 
+    background-image: url(../img/xman.png);
+    animation: xman 0.54s 0.3s 3 steps(18) forwards;
+}
+
+@keyframes qman {
+    to {
+        background-position: -3750px 0;
+    }
+}
+@keyframes oman {
+    to {
+        background-position: -5625px 0;
+    }
+}
+@keyframes xman {
+    to {
+        background-position: -3375px 0;
+    }
+}
+
+/* 1번 문제 */
+
+/*버튼 선택 처리*/
+.Btn{
+    cursor: pointer;
+}
+.Btn img{
+    display: none;
+}
+.Btn.on img{
+    display: block;
+}
+/*버튼 선택 처리 끝*/
+
+
+.Select_con {
+    position: absolute;
+    left: 168px;
+    top: 182px;
+}
+
+.Camera,.Tab,.Speaker,.Dron,.Wifi,.Computer{
+    position: absolute;
+    /* border: 5px solid black; */
+}
+
+.Ex01,.Ex02,.Ex03,.Ex04,.Ex05,.Ex06{
+    position: absolute;
+}
+
+.Camera {
+    width: 111px;
+    height: 69px;
+    top: 83px;
+    left: 103px;
+}
+
+.Tab {
+    width: 111px;
+    height: 71px;
+    top: 255px;
+    left: 235px;
+}
+
+.Speaker {
+    width: 81px;
+    height: 80px;
+    top: 351px;
+    left: 328px;
+}
+
+.Dron {
+    width: 139px;
+    height: 74px;
+    top: 91px;
+    left: 557px;
+}
+
+.Wifi {
+    width: 89px;
+    height: 58px;
+    top: 189px;
+    left: 430px;
+}
+
+.Computer {
+    width: 195px;
+    height: 156px;
+    top: 278px;
+    left: 406px;
+}
+
+/* 버튼 스타일 */
+.next {
+    position: absolute;
+    bottom: 52px;
+    right: 58px;
+}
+
+.next button {
+    padding: 5px 10px; 
+    font-size: 14px; 
+    background-color: #ff6600; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.next button:hover {
+    background-color: #ff4500; 
+}
+
+/* 2번 문제 */
+
+.Drag_con2,.Drag_Area,.Same_Area{
+    position: absolute;
+    /* border: 5px solid black; */
+}
+
+.Drag_con2 {
+    width: 1013px;
+    height: 425px;
+    top: 231px;
+    left: 130px;
+  
+}
+
+.Drag_Area {
+    width: 926px;
+    height: 264px;
+    top: 9px;
+    left: 42px;
+}
+
+.Same_Area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 345px;
+    height: 135px;
+    top: 13px;
+    left: 333px;
+}
+
+.Ex01-2,.Ex02-2,.Ex03-2,.Ex04-2{
+    position: absolute;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.Ex01-2 {
+    top: 16px;
+    left: 168px;
+    width: 178px;
+}
+
+.Ex02-2 {
+    top: 99px;
+    left: 19px;
+    width: 178px;
+}
+
+.Ex03-2 {
+    top: 158px;
+    left: 379px;
+    width: 173px;
+}
+
+.Ex04-2 {
+    top: 205px;
+    left: 490px;
+    width: 114px;
+}
+
+.Btn_Area {
+    position: absolute;
+    top: 77%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 40px; 
+}
+
+.Btn01,Btn02{
+    width:160;
+    height:45;
+}
+
+.Btn03{
+    width:140;
+    height:45;
+}
+

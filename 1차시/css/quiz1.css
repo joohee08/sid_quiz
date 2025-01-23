@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh; /* 화면 전체 높이 */
+    background-color: #000000;
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+
+.Section {
+    width: 1280px; 
+    height: 720px;
+    position: relative;
+    background-color: transparent; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.Section {
+    position: absolute;
+}
+
+#Con1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 캐릭터 */
+.Character1 {
+    height: 203px;
+    width: 180px;
+    position: absolute;
+    bottom: 0px;
+    left: 42px;
+}
+.Character1 > div {
+    position: absolute; /* 부모(Character1)를 기준으로 위치 지정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 부모 크기만큼 가득 차게 설정 */
+    height: 100%; /* 부모 크기만큼 가득 차게 설정 */
+   
+}
+
+.qman {
+    display: block;
+    background-image: url(../img/qman.png);
+    animation: qman 1.4s 0.3s infinite steps(20) forwards;
+}
+
+.oman {
+    display: none ; 
+    background-image: url(../img/oman.png);
+    animation: oman 0.9s 0.3s 5 steps(30) forwards;
+}
+
+.xman {
+    display: none ; 
+    background-image: url(../img/xman.png);
+    animation: xman 0.54s 0.3s 3 steps(18) forwards;
+}
+
+@keyframes qman {
+    to {
+        background-position: -3750px 0;
+    }
+}
+@keyframes oman {
+    to {
+        background-position: -5625px 0;
+    }
+}
+@keyframes xman {
+    to {
+        background-position: -3375px 0;
+    }
+}
+
+
+/* 1번 문제*/
+
+/*버튼 선택 처리*/
+.ChkBtn{
+    cursor: pointer;
+}
+.ChkBtn img{
+    display: none;
+}
+.ChkBtn.on img{
+    display: block;
+}
+/*버튼 선택 처리 끝*/
+
+.Select_con {
+    position: absolute;
+    left: 168px;
+    top: 182px;
+}
+
+.Check{
+    margin-top:-22px;
+    margin-left:-31px;
+    width: 81px;
+}
+
+/* Line_1: 위쪽 영역 */
+.Select1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Line_1 {
+    display: flex;
+    gap: 14px;
+    margin-top: 50px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.Ex01 {
+    width: 459px;
+    height: 207px;
+    background-color: transparent;
+}
+
+.Ex01 img {
+    position: absolute;
+    left:50px;
+    top:70px;
+}
+
+.Ex02 {
+    width: 459px;
+    height: 207px;
+    background-color: transparent;
+}
+
+.Ex02 img {
+    position: absolute;
+    left:512px;
+    top:70px;
+}
+
+/* Line_2: 아래쪽 영역 */
+.Select2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Line_2 {
+    display: flex;
+    gap: 14px;
+    margin-top: 14px;
+    margin-left: 6px;
+    justify-content: center;
+}
+
+.Ex03 {
+    width: 459px;
+    height: 207px;
+    background-color:transparent;
+}
+
+.Ex03 img {
+    position: absolute;
+    left:50px;
+    top:278px;
+}
+
+.Ex04 {
+    width: 459px;
+    height: 207px;
+    background-color: transparent;
+}
+
+.Ex04 img {
+    position: absolute;
+    left:512px;
+    top:278px;
+}
+
+/* 버튼 스타일 */
+.next {
+    position: absolute;
+    bottom: 52px;
+    right: 58px;
+}
+
+.next button {
+    padding: 5px 10px; 
+    font-size: 14px; 
+    background-color: #ff6600; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.next button:hover {
+    background-color: #ff4500; 
+}
+
+
+/* 2번 문제 */
+
+/*버튼 선택 처리*/
+.Btn{
+    cursor: pointer;
+}
+.Btn img{
+    display: none;
+}
+.Btn.on img{
+    display: block;
+}
+/*버튼 선택 처리 끝*/
+
+.Select_con2{
+    position: absolute;
+    left: 168px;
+    top: 182px;
+}
+
+/* 공통 체크 이미지 스타일 */
+.Ex01-2,.Ex02-2,.Ex03-2,.Ex04-2,.Ex05-2,.Ex06-2{
+    position: absolute;
+    background-color: transparent;
+    /* border: 2px solid #000; */
+    height: 31px;
+}
+
+/* 공통 체크 이미지 스타일 */
+.btn-1,.btn-2,.btn-3,.btn-4,.btn-5,.btn-6{
+    position: absolute;
+}
+
+
+.Ex01-2 {
+    top: 138px;
+    left: 261px;
+    width: 544px;
+}
+
+.btn-1 {
+    top: -44px;
+    left: -41px;
+    width: 584px;
+}
+
+.Ex02-2 {
+    top: 171px;
+    left: 128px;
+    width: 367px;
+}
+
+.btn-2 {
+    top: -45px;
+    left: -42px;
+    width: 410px;
+}
+
+.Ex03-2 {
+    top: 235px;
+    left: 317px;
+    width: 423px;
+}
+
+.btn-3 {
+    top: -46px;
+    left: -41px;
+    width: 462px;
+}
+
+.Ex04-2 {
+    top: 332px;
+    left: 659px;
+    width: 173px;
+}
+
+.btn-4 {
+    top: -51px;
+    left: -44px;
+    width: 216px;
+}
+
+.Ex05-2 {
+    top: 365px;
+    left: 126px;
+    width: 73px;
+}
+
+.btn-5 {
+    top: -2px;
+    left: -2px;
+    width: 74px;
+}
+
+.Ex06-2 {
+    top: 461px;
+    left: 128px;
+    width: 434px;
+}
+
+.btn-6 {
+    top: -48px;
+    left: -46px;
+    width: 479px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh; /* 화면 전체 높이 */
+    background-color: #000000;
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+
+.Section {
+    width: 1280px; /* 콘텐츠 너비 */
+    height: 720px; /* 콘텐츠 높이 */
+    position: relative;
+    background-color: transparent; /* 배경색 투명 */
+    display: flex; /* 내부 요소 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
+}
+
+.Section {
+    position: absolute;
+}
+
+#Con3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 캐릭터 */
+.Character1 {
+    height: 203px;
+    width: 180px;
+    position: absolute;
+    bottom: 0px;
+    left: 42px;
+}
+.Character1 > div {
+    position: absolute; /* 부모(Character1)를 기준으로 위치 지정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 부모 크기만큼 가득 차게 설정 */
+    height: 100%; /* 부모 크기만큼 가득 차게 설정 */
+   
+}
+
+.qman {
+    display: block;
+    background-image: url(../img/qman.png);
+    animation: qman 1.4s 0.3s infinite steps(20) forwards;
+}
+
+.oman {
+    display: none ; 
+    background-image: url(../img/oman.png);
+    animation: oman 0.9s 0.3s 5 steps(30) forwards;
+}
+
+.xman {
+    display: none ; 
+    background-image: url(../img/xman.png);
+    animation: xman 0.54s 0.3s 3 steps(18) forwards;
+}
+
+@keyframes qman {
+    to {
+        background-position: -3750px 0;
+    }
+}
+@keyframes oman {
+    to {
+        background-position: -5625px 0;
+    }
+}
+@keyframes xman {
+    to {
+        background-position: -3375px 0;
+    }
+}
+
+
+/* 1번 문제*/
+
+/*버튼 선택 처리*/
+.ChkBtn{
+    cursor: pointer;
+}
+.ChkBtn img{
+    display: none;
+}
+.ChkBtn.on img{
+    display: block;
+}
+/*버튼 선택 처리 끝*/
+
+.Select_con {
+    position: absolute;
+    left: 168px;
+    top: 182px;
+}
+
+/* Line_1: 위쪽 영역 */
+.Select1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Line_1 {
+    display: flex;
+    gap: 14px;
+    margin-top: 50px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.Ex01 {
+    width: 459px;
+    height: 207px;
+    background-color: transparent;
+}
+
+.Ex01 img {
+    position: absolute;
+    left: 27px;
+    top: 47px;
+}
+
+.Ex02 {
+    width: 459px;
+    height: 207px;
+    background-color: transparent;
+}
+
+.Ex02 img {
+    position: absolute;
+    left: 480px;
+    top: 46px;
+}
+
+/* Line_2: 아래쪽 영역 */
+.Select2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Line_2 {
+    display: flex;
+    gap: 14px;
+    margin-top: 14px;
+    margin-left: 6px;
+    justify-content: center;
+}
+
+.Ex03 {
+    width: 459px;
+    height: 207px;
+    background-color:transparent;
+}
+
+.Ex03 img {
+    position: absolute;
+    left: 29px;
+    top: 262px;
+}
+
+.Ex04 {
+    width: 459px;
+    height: 207px;
+    background-color: transparent;
+}
+
+.Ex04 img {
+    position: absolute;
+    left: 480px;
+    top: 262px;
+}
+
+/* 버튼 스타일 */
+.next {
+    position: absolute;
+    bottom: 52px;
+    right: 58px;
+}
+
+.next button {
+    padding: 5px 10px; 
+    font-size: 14px; 
+    background-color: #ff6600; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.next button:hover {
+    background-color: #ff4500; 
+}
+
+
+/* 2번 문제 */
+.Input_box{
+    left: 202px;
+    top: 275px;
+}
+
+.Input_box2{
+    left: 417px;
+    top: 275px;
+}
+
+.Input_box3 {
+    left: 949px;
+    top: 379px;
+}
+
+.Input_box4 {
+    left: 516px;
+    top: 520px;
+}
+
+.Ex01-2,.Ex02-2,.Ex03-2,.Ex04-2,.Ex05-2,
+.Ex06-2,.Ex07-2,.Ex08-2,.Ex09-2,
+.Ex10-2,.Ex11-2,.Ex12-2,
+.Ex13-2,.Ex14-2,.Ex15-2,.Ex16-2{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    outline: none; /* 포커스 테두리 제거 */
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -121px;
+}
+
+
+
+
+
+
+
+

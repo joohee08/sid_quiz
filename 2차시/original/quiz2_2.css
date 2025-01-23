@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#Con-2-2 {
+    width: 1280px;
+    height: 720px;
+    background-color: #C1561C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 200px;
+}
+
+#sub_Con2-2 {
+    background-image: 
+    url('../image/Layer2.png'),
+    url('../image/Shadow.png'); 
+    width: 1152px;
+    height: 648px;
+    background-color: #E2E1DF;
+    border: 3px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.Quiz_num2-2 img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    z-index: 10;
+}
+
+.Quiz_text2-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 287px;
+}
+
+.Quiz_text2-2 img {
+    width: 920px;
+}
+
+.Box1 {
+    position: absolute;
+    top: 62%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 112px; 
+}
+
+.Dragbox {
+    width: 790px; 
+    height: auto; 
+}
+
+.Content2-2 {
+    position: absolute; 
+    top: 33%; 
+    left: 54%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    width:792px;
+    font-size: 1.05em;
+    font-weight: 900;
+    line-height: 27px;
+    letter-spacing: -1px; /* 음수 값으로 간격 좁힘 */
+}
+
+.Blank{
+    width: 115px;
+    height: 30px;
+}
+
+.Blank01{
+    margin: 0px 0px -6px;
+}
+
+.Blank01-1{
+    margin: 4px 0px -9px;
+}
+
+.Example {
+    position: absolute;
+    top: 75%; 
+    left: 1%; 
+    width: 100px;
+    margin-top: -13px;
+    z-index: 2; 
+}
+
+.Selectbox {
+    position: absolute;
+    top: 75%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 794px;
+    height: 90px;
+}
+
+.Btns {
+    position: absolute;
+    top: 83%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 40px; 
+}
+
+.Btn-01,
+.Btn-02,
+.Btn-03 {
+    width: 112px; 
+    height: auto;
+}
+
+.Character2-2 {
+    position: absolute;
+    bottom: -39px;
+    left: 15px;
+    width: 127px;
+    z-index: 5;
+}
+
+.Character2-2 img {
+    width: 120%;
+    display: block;
+}

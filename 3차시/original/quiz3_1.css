@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    background-color: #ffffff;
+}
+
+#Con-3-1 {
+    width: 1280px;
+    height: 720px;
+    background-color: #C1561C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#sub_Con3-1 {
+    background-image: 
+    url('../image/Layer2.png'),
+    url('../image/Shadow.png');
+    width: 1152px;
+    height: 648px;
+    background-color: #E2E1DF;
+    border: 3px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.Quiz_num3-1 img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+.Quiz_text3-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 639px;
+    position: relative;
+}
+
+.Quiz_text3-1 img {
+    width: 800px;
+    margin-top: 67px;
+}
+
+.Options3 img {
+    width: 958px;
+    margin-top: 22px;
+}
+
+.question_box {
+    margin-left: 130px;
+}
+
+.Line_3-1, .Line_3-2 {
+    display: flex;
+}
+
+.Line_3-1 {
+    margin-top: -472px;
+}
+
+.Line_3-2 {
+    margin-top: -24px;
+}
+
+.One, .Two, .Three, .Four {
+    font-size: 30px;
+}
+
+.One, .Three {
+    margin-left: -13px;
+    margin-top: 58px;
+}
+
+.Two, .Four {
+    margin-left: 175px;
+    margin-top: 56px;
+}
+
+.One img, .Three img {
+    width: 220px;
+    height: 138px;
+    margin-top: -3px;
+    margin-left: 50px;
+}
+
+.Two img, .Four img {
+    width: 116px;
+    height: 110px;
+    margin-top: 1px;
+    margin-left: 118px;
+}
+
+.Character3-1 {
+    position: absolute;
+    bottom: -39px;
+    left: 10px;
+    width: 127px; 
+    height: auto;
+    z-index: 5; 
+}
+
+.Character3-1 img {
+    display: block;
+    width: 127%;
+    height: auto;
+}

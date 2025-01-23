@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#Con-2-1 {
+    width: 1280px;
+    height: 720px;
+    background-color: #C1561C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 200px;
+}
+
+#sub_Con2-1 {
+    background-image: 
+    url('../image/Layer2.png'),
+    url('../image/Shadow.png'); 
+    width: 1152px;
+    height: 648px;
+    background-color: #E2E1DF;
+    border: 3px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.Quiz_num2-1 img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    z-index: 10;
+}
+
+.Quiz_text2-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 628px;
+}
+
+.Quiz_text2-1 img {
+    width: 800px;
+}
+
+.Quesimg{
+    position: relative;
+    top:7%;
+
+}
+
+.Character2-1 {
+    position: absolute;
+    bottom: -39px;
+    left: 3px;
+    width: 127px;
+    z-index: 5;
+}
+
+.Character2-1 img {
+    width: 110%;
+    display: block;
+}

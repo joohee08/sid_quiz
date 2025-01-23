@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh; /* 화면 전체 높이 */
+    background-color: #000000;
+    overflow: hidden; /* 스크롤 방지 */
+}
+
+
+.Section {
+    width: 1280px; /* 콘텐츠 너비 */
+    height: 720px; /* 콘텐츠 높이 */
+    position: relative;
+    background-color: transparent; /* 배경색 투명 */
+    display: flex; /* 내부 요소 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
+}
+
+.Section {
+    position: absolute;
+   
+}
+
+#Con5 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 캐릭터 */
+.Character1 {
+    height: 203px;
+    width: 180px;
+    position: absolute;
+    bottom: 0px;
+    left: 42px;
+}
+.Character1 > div {
+    position: absolute; /* 부모(Character1)를 기준으로 위치 지정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 부모 크기만큼 가득 차게 설정 */
+    height: 100%; /* 부모 크기만큼 가득 차게 설정 */
+   
+}
+
+.qman {
+    display: block;
+    background-image: url(../img/qman.png);
+    animation: qman 1.4s 0.3s infinite steps(20) forwards;
+}
+
+.oman {
+    display: none ; 
+    background-image: url(../img/oman.png);
+    animation: oman 0.9s 0.3s 5 steps(30) forwards;
+}
+
+.xman {
+    display: none ; 
+    background-image: url(../img/xman.png);
+    animation: xman 0.54s 0.3s 3 steps(18) forwards;
+}
+
+@keyframes qman {
+    to {
+        background-position: -3750px 0;
+    }
+}
+@keyframes oman {
+    to {
+        background-position: -5625px 0;
+    }
+}
+@keyframes xman {
+    to {
+        background-position: -3375px 0;
+    }
+}
+
+
+/* 1번 문제*/
+
+/*버튼 선택 처리*/
+.Btn{
+    cursor: pointer;
+}
+.Btn img{
+    display: none;
+}
+.Btn.on img{
+    display: block;
+}
+/*버튼 선택 처리 끝*/
+
+.Select_con{
+    position: absolute;
+    left: 168px;
+    top: 182px;
+}
+
+/* 공통 체크 이미지 스타일 */
+.Ex01,.Ex02,.Ex03,.Ex04,.Ex05{
+    position: absolute;
+    background-color: transparent;
+    /* border: 2px solid #ff049f; */
+    height: 31px;
+}
+
+/* 공통 체크 이미지 스타일 */
+.btn-1,.btn-2,.btn-3,.btn-4,.btn-5{
+    position: absolute;
+}
+
+.Ex01 {
+    top: 104px;
+    left: 157px;
+    width: 58px;
+}
+
+.btn-1 {
+    top: -56px;
+    left: -43px;
+}
+
+.Ex02 {
+    top: 103px;
+    left: 294px;
+    width: 137px;
+}
+
+.btn-2 {
+    top: -56px;
+    left: -44px;
+}
+
+.Ex03 {
+    top: 153px;
+    left: 82px;
+    width: 111px;
+}
+
+.btn-3 {
+    top: -56px;
+    left: -42px;
+}
+
+.Ex04 {
+    top: 283px;
+    left: 344px;
+    width: 76px;
+}
+
+.btn-4 {
+    top: -59px;
+    left: -43px;
+}
+
+.Ex05 {
+    top: 412px;
+    left: 159px;
+    width: 147px;
+}
+
+.btn-5 {
+    top: -61px;
+    left: -40px;
+}
+
+/* 버튼 스타일 */
+.next {
+    position: absolute;
+    bottom: 52px;
+    right: 58px;
+}
+
+.next button {
+    padding: 5px 10px; 
+    font-size: 14px; 
+    background-color: #ff6600; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.next button:hover {
+    background-color: #ff4500; 
+}
+
+
+/* 2번 문제 */
+.Input_box {
+    left: 443px;
+    top: 419px;
+}
+
+.Input_box2 {
+    left: 218px;
+    top: 490px;
+}
+
+.Ex01-2,.Ex02-2,.Ex03-2,.Ex04-2,.Ex05-2,
+.Ex06-2,.Ex07-2,.Ex08-2{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border: none;
+    background-color:transparent;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    outline: none; /* 포커스 테두리 제거 */
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -121px;
+}
+
+
+
+
+
+
+

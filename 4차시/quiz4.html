@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz4</title>
+    <link rel="stylesheet" href="css/quiz4.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="js/quiz_m.js"></script>
+
+    <style>
+		#canvasDiv{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 1280px;
+          	height: 720px;
+          	pointer-events: none;
+		}
+		#canvasDiv canvas {
+          width: 100%;
+          height: 100%;
+        }
+		.btn-point{
+			cursor: pointer;
+		}
+		.btn-point.selected {
+            height: 22px;
+			border: 4px solid #ea5f01;
+			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2) inset, 0 0 0 3px #ea5f01,
+				3px 3px 5px rgba(0, 0, 0, 0.3);
+			background: #fff0cf;
+			border-radius: 50%; /* 테두리를 원형으로 설정 */
+		}
+	</style>
+</head>
+
+<body>
+    <div class="Section quiz1" style="display:block;">
+        <div id="Con4">
+            <img src="img/Quiz4-1.png" alt="Background">
+            <div class="Select_con">
+                <div class="Select1">
+                    <div class="Line_1">
+                        <!-- 구역 -->
+                        <div class="Ex01 ChkBtn">
+                            <img src="img/Ex01.png" alt="선택1">
+                        </div>
+                        <div class="Ex02 ChkBtn">
+                            <img src="img/Ex02.png" alt="선택2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Select2">
+                    <div class="Line_2">
+                        <!-- 구역 -->
+                        <div class="Ex03 ChkBtn">
+                            <img src="img/Ex03.png" alt="선택3">
+                        </div>
+                        <div class="Ex04 ChkBtn">
+                            <img src="img/Ex04.png" alt="선택4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 캐릭터 이미지 -->
+            <div class="Character1">
+                <div class="qman"></div>
+                <div class="oman"></div>
+                <div class="xman"></div>
+            </div>
+
+            <div class="next">
+                <button id="nextQuizButton">다음 문제</button>
+            </div>
+        </div>
+    </div>
+
+
+   <!--문제 2번  -->
+   <div class="Section quiz2" style="display:none;">
+    <div id="Con4">
+        <img src="img/Quiz4-2.png" alt="Background">
+        <div id="canvasDiv">
+            <canvas id="canvas" width="1280" height="720"></canvas>
+        </div>
+        <!-- 선택 박스 -->
+        <div class="Select_con2">
+
+            <div class="left-list">
+                <div class="Ex01-2 btn-point" data-id="left1"><img src="img/Dot1.png" loading="lazy" alt="" class="dot_img"></div>
+                <div class="Ex02-2 btn-point" data-id="left2"><img src="img/Dot2.png" loading="lazy" alt="" class="dot_img"></div>
+                <div class="Ex03-2 btn-point" data-id="left3"><img src="img/Dot3.png" loading="lazy" alt="" class="dot_img"></div>
+                <div class="Ex04-2 btn-point" data-id="left4"><img src="img/Dot4.png" loading="lazy" alt="" class="dot_img"></div>
+            </div>
+            <div class="right-list">
+                <div class="Ex05-2 btn-point" data-id="right1"><img src="img/Dot5.png" loading="lazy" alt="" class="dot_img"></div>
+                <div class="Ex06-2 btn-point" data-id="right2"><img src="img/Dot6.png" loading="lazy" alt="" class="dot_img"></div>
+                <div class="Ex07-2 btn-point" data-id="right3"><img src="img/Dot7.png" loading="lazy" alt="" class="dot_img"></div>
+                <div class="Ex08-2 btn-point" data-id="right4"><img src="img/Dot8.png" loading="lazy" alt="" class="dot_img"></div>
+            </div>
+        </div>
+        <!-- 캐릭터 이미지 -->
+        <div class="Character1">
+            <div class="qman"></div>
+            <div class="oman"></div>
+            <div class="xman"></div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
